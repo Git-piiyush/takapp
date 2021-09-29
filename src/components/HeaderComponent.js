@@ -28,52 +28,78 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar className="fixed-top" dark expand="md">
+        <Navbar className="fixed-top list-unstyled" color="white" expand="md">
           <div className="container">
-            <NavbarToggler onClick={this.toggleNav} />
-            <NavbarBrand
-              className="mr-auto App-logo d-none d-lg-block"
-              href="/"
-            >
+            <NavbarToggler onClick={this.toggleNav} className="toogler" />
+            <NavbarBrand className="mr-auto" href="/">
               <img
                 src="assets/images/logo.png"
-                height="30"
-                width="41"
+                height="35"
+                width="45"
                 alt="Tak app"
               />
             </NavbarBrand>
-            {/* <NavbarBrand
-              className="mr-auto App-logo d-md-block d-lg-block"
-              href="/"
-            >
+            <NavbarBrand className="mr-auto" href="/">
               <img
-                src="assets/images/logo.png"
+                src="assets/images/profile.png"
                 height="30"
-                width="41"
-                alt="Tak app"
+                width="30"
+                alt="profile"
               />
-            </NavbarBrand> */}
+            </NavbarBrand>
+
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
-                    <span className="fa fa-home fa-lg"></span> Home
+                    <img
+                      height="15"
+                      width="15"
+                      src="assets/images/home.png"
+                      alt="Talk to astrologer"
+                    />{" "}
+                    <span style={{ marginLeft: "8px", color: "black" }}>
+                      Home
+                    </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="nav-link" to="/aboutus">
-                    <span className="fa fa-info fa-lg"></span> About Us
+                  <NavLink className="nav-link" to="/talk">
+                    <img
+                      height="15"
+                      width="15"
+                      src="assets/images/talk.png"
+                      alt="Talk to astrologer"
+                    />
+                    <span style={{ marginLeft: "8px", color: "black" }}>
+                      Talk to astrologer
+                    </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/menu">
-                    <span className="fa fa-list fa-lg"></span> Menu
+                    <img
+                      height="15"
+                      width="15"
+                      src="assets/images/ask.png"
+                      alt="Talk to astrologer"
+                    />
+                    <span style={{ marginLeft: "8px", color: "black" }}>
+                      Ask Questions
+                    </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/contactus">
-                    <span className="fa fa-address-card fa-lg"></span> Contact
-                    Us
+                    <img
+                      height="15"
+                      width="15"
+                      src="assets/images/reports.png"
+                      alt="Talk to astrologer"
+                    />
+                    <span style={{ marginLeft: "8px", color: "black" }}>
+                      Reports
+                    </span>
                   </NavLink>
                 </NavItem>
               </Nav>

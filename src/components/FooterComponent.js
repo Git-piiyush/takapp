@@ -4,38 +4,61 @@ import { Navbar, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-    // this.state = {
-    //   isNavOpen: false,
-    // };
-    // this.toggleNav = this.toggleNav.bind(this);
-  }
-
   render() {
     return (
-      <div className="d-none fixed-bottom">
-        <Navbar dark expand="md">
-          <div className="container list-unstyled justify-content-around">
+      <div className="fixed-bottom">
+        <Navbar dark expand="md" color="white">
+          <div
+            className="container list-unstyled justify-content-around"
+            style={{
+              fontSize: "10px",
+              marginTop: "-4px",
+              marginBottom: "-4px",
+            }}
+          >
             <NavItem>
               <NavLink className="nav-link" to="/home">
-                <span className="fa fa-home fa-lg"></span>
+                <img
+                  height="25"
+                  width="25"
+                  src="assets/images/home.png"
+                  alt="Talk to astrologer"
+                />
               </NavLink>
+              <div style={{ marginTop: "-5px" }}>Home </div>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/aboutus">
-                <span className="fa fa-info fa-lg"></span>
+              <NavLink className="nav-link" to="/talk" active>
+                <img
+                  height="25"
+                  width="25"
+                  src="assets/images/talk.png"
+                  alt="Talk to astrologer"
+                />
               </NavLink>
+              <div style={{ marginTop: "-5px" }}>Talk to Astrologer</div>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/menu">
-                <span className="fa fa-list fa-lg"></span>
+              <NavLink className="nav-link px-5" to="/">
+                <img
+                  height="25"
+                  width="25"
+                  src="assets/images/ask.png"
+                  alt="Talk to astrologer"
+                />
               </NavLink>
+              <div style={{ marginTop: "-5px" }}>Ask Question</div>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/contactus">
-                <span className="fa fa-address-card fa-lg"></span>
+              <NavLink className="nav-link" to="/">
+                <img
+                  height="25"
+                  width="25"
+                  src="assets/images/reports.png"
+                  alt="Reports"
+                />
               </NavLink>
+              <div style={{ marginTop: "-5px" }}>Reports</div>
             </NavItem>
           </div>
         </Navbar>
