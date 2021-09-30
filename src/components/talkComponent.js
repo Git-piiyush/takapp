@@ -8,8 +8,8 @@ import {
   CardSubtitle,
   Button,
 } from "reactstrap";
-
-function CardComponent() {
+import talkAstro from "../assests/talk_astro.json"
+function CardComponent(props) {
   return (
     <div>
       <Card
@@ -26,20 +26,20 @@ function CardComponent() {
         <CardImg
           top
           width="160px"
-          height="100%"
-          src="/assets/318x180.svg"
+          height="160px"
+          src={props.imageUrl}
           alt="Card image cap"
           style={{ border: "1px solid black" }}
         />
         <CardBody className="p-2">
           <div className="d-flex flex-row">
             <div className="col-10 d-flex justify-content-start">
-              <h5 className="">Card title jhbsd</h5>
+              <h5 className="" style={{textAlign:"left"}}>{props.name}</h5>
             </div>
 
             <div className="col-2">
               <h5 className="ml-0" style={{ color: "#ff944d" }}>
-                4.6
+               {props.rating}
               </h5>
             </div>
           </div>
@@ -48,12 +48,12 @@ function CardComponent() {
             tag="p"
             className="d-flex flex-row mb-2 text-muted mt-2 "
           >
-            Card subtitle vastu
+            {props.skill[0]}
           </CardSubtitle>
 
           <div className="d-flex  align-items-start">
             <div className="col-3">
-              <CardText>&#8377;500/min</CardText>{" "}
+              <CardText>&#8377;{props.price}/min</CardText>{" "}
             </div>
 
             <div className="d-flex col-9 ml-auto px-1 justify-content-end">
@@ -83,7 +83,7 @@ function Talk() {
         guide you so that you can take the right path towards growth and
         prosperity.
       </Ctext>
-
+<div style={{ overflow: "hidden" , height:"250px"}}> 
       <div
         className="d-flex flex-row p-1"
         style={{
@@ -94,9 +94,17 @@ function Talk() {
           marginBottom: "-15px",
         }}
       >
-        <CardComponent />
-        <CardComponent />
-        <CardComponent />
+      { talkAstro.Astrodata.map((result)=>{
+return <CardComponent  name ={result.name}
+rating={result.rating}
+skill = {result.skills}
+price = {result.price}
+imageUrl = {result.imageUrl}
+/>
+      })  }
+       
+        
+      </div>
       </div>
     </div>
   );

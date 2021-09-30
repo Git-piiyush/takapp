@@ -10,8 +10,8 @@ import {
   Button,
 } from "reactstrap";
 import Ctext from "./Ctext";
-
-function RenderCard() {
+import horoscopeData from "../assests/horoscope_json.json"
+function RenderCard(props) {
   return (
     <Card
       className="d-flex align-items-center"
@@ -33,16 +33,16 @@ function RenderCard() {
           borderRadius: "50%",
           backgroundColor: "blue",
         }}
-        src={"/"}
+        src="images/horoscope.png"
         alt={"horoscope"}
       />
-      {/* baseUrl + leader.img */}
+      
       <CardBody
         className="px-0"
-        style={{ marginTop: "-9px", fontSize: "12px" }}
+        style={{ marginTop: "-9px", fontSize: "12px" , textTransform:"capitalize"}}
       >
         <CardTitle tag="h6">
-          <strong>Piyush</strong>
+          <strong>{props.name}</strong>
         </CardTitle>
         <br />
         <CardSubtitle
@@ -50,7 +50,7 @@ function RenderCard() {
           className="mb-2 text-muted"
           style={{ marginTop: "-13px" }}
         >
-          April'21-September'23
+          {props.date}
         </CardSubtitle>
       </CardBody>
     </Card>
@@ -64,16 +64,19 @@ function DailyHoroscopes() {
         Read your daily horoscope based on your sunsign, select your zodiac sign
         and give the right start to your day.
       </Ctext>
+      <div style={{ overflow: "hidden" , height:"130px"}}> 
       <div
         className="d-flex flex-row"
-        style={{ overflow: "auto", WebkitOverflowScrolling: "auto" }}
+        style={{ overflow: "auto", paddingBottom:"20px"}}
       >
-        <RenderCard />
-        <RenderCard />
-        <RenderCard />
-        <RenderCard />
-        <RenderCard />
-        <RenderCard />
+        { horoscopeData.data.map((result)=>{
+return <RenderCard name={result.name}
+date={result.date}/>
+        })
+          
+        }
+        
+      </div>
       </div>
     </div>
   );

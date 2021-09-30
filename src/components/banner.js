@@ -7,15 +7,11 @@ function Banner() {
       style={{
         height: "100px",
         width: "100%",
-        marginBottom: "10px",
+        marginBottom: "40px",
         marginTop: "70px",
       }}
     >
-      <div className="p-2" style={{}}>
-        {/* <div>
-          There is no better boat than horoscope to help man cross over the see.
-        </div>
-        <div className="text-muted mt-2">-Varahamihira</div> */}
+      <div className="p-2">
         <blockquote>
           <p className="quotation">
             There is no better boat than horoscope to help man cross over the
@@ -34,7 +30,7 @@ function Banner() {
         }}
       >
         <img
-          src="assets/images/ganesha.png"
+          src="images/ganesha.png"
           width="100px"
           height="100px"
           style={{

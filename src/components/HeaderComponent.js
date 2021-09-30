@@ -10,6 +10,7 @@ import {
 
 import { NavLink } from "react-router-dom";
 
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -33,7 +34,7 @@ class Header extends Component {
             <NavbarToggler onClick={this.toggleNav} className="toogler" />
             <NavbarBrand className="mr-auto" href="/">
               <img
-                src="assets/images/logo.png"
+                src="images/logo.png"
                 height="35"
                 width="45"
                 alt="Tak app"
@@ -41,7 +42,7 @@ class Header extends Component {
             </NavbarBrand>
             <NavbarBrand className="mr-auto" href="/">
               <img
-                src="assets/images/profile.png"
+                src="images/profile.png"
                 height="30"
                 width="30"
                 alt="profile"
@@ -55,7 +56,7 @@ class Header extends Component {
                     <img
                       height="15"
                       width="15"
-                      src="assets/images/home.png"
+                      src="images/home.png"
                       alt="Talk to astrologer"
                     />{" "}
                     <span style={{ marginLeft: "8px", color: "black" }}>
@@ -68,7 +69,7 @@ class Header extends Component {
                     <img
                       height="15"
                       width="15"
-                      src="assets/images/talk.png"
+                      src="images/talk.png"
                       alt="Talk to astrologer"
                     />
                     <span style={{ marginLeft: "8px", color: "black" }}>
@@ -81,7 +82,7 @@ class Header extends Component {
                     <img
                       height="15"
                       width="15"
-                      src="assets/images/ask.png"
+                      src="images/ask.png"
                       alt="Talk to astrologer"
                     />
                     <span style={{ marginLeft: "8px", color: "black" }}>
@@ -94,7 +95,7 @@ class Header extends Component {
                     <img
                       height="15"
                       width="15"
-                      src="assets/images/reports.png"
+                      src="images/reports.png"
                       alt="Talk to astrologer"
                     />
                     <span style={{ marginLeft: "8px", color: "black" }}>

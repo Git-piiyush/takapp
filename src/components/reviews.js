@@ -10,8 +10,8 @@ import {
   Button,
 } from "reactstrap";
 import { IoPersonSharp } from "react-icons/io5";
-
-const ReviewCard = () => {
+import ReviewData from "../assests/reviews_json.json"
+const ReviewCard = (props) => {
   return (
     <div>
       <div className="d-flex flex-row">
@@ -36,16 +36,13 @@ const ReviewCard = () => {
             }}
             className="px-1 py-3"
           >
-            {/* {" "}
-            My name asfa ad asfa adfadsv adfadfgadv adfrom asfa adfad dfad
-            adfadfadsv adfadfgadv adf rajashtan a state situated{" "} */}
-            <blockquote>
-              <p className="quotation-review">
-                There is no better boat than horoscope to help man cross over
-                the see.There is no better boat than horoscope to help man cross
-                over the see. the see.
+           
+            <div className="quotation-review">
+             <div className="big-qoute d-flex flex-row"> &#34;</div>
+              <p  style={{textAlign:"left" ,marginTop:"30px"}}>
+                {props.comment}
               </p>
-            </blockquote>
+            </div>
           </CardText>
           <div
             style={{
@@ -73,7 +70,7 @@ const ReviewCard = () => {
               }}
             >
               <CardTitle tag="h6" style={{ marginTop: "18px" }}>
-                Piyush
+                {props.name}
               </CardTitle>
               <br />
               <CardSubtitle
@@ -81,7 +78,7 @@ const ReviewCard = () => {
                 className="text-muted"
                 style={{ marginTop: "-30px", fontSize: "13px" }}
               >
-                Jhunjhunu, Rajasthan
+                {props.district}, {props.country}
               </CardSubtitle>
             </CardBody>
           </div>
@@ -98,15 +95,19 @@ function reviews() {
         <h4> Hear from our happy customers!</h4>
       </div>
 
+<div style={{overflow:"hidden" , height:"280px"}}>
       <div
         className="d-flex flex-row px-2 mt-3"
         style={{ overflow: "auto", WebkitOverflowScrolling: "auto" }}
       >
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
+      { ReviewData.data.map((result)=>{
+          return <ReviewCard name={result.name} comment={result.comment} country={result.location.country} district={result.location.district}/>
+      })
+        
+} 
       </div>
+
+       </div>
     </div>
   );
 }

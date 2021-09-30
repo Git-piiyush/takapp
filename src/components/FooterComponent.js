@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Navbar, NavItem } from "reactstrap";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 
 class Footer extends Component {
   render() {
@@ -17,48 +18,53 @@ class Footer extends Component {
             }}
           >
             <NavItem>
-              <NavLink className="nav-link" to="/home">
+              <NavLink className="nav-link" to="/home" >
                 <img
                   height="25"
                   width="25"
-                  src="assets/images/home.png"
+                  src="images/home.png"
                   alt="Talk to astrologer"
                 />
+                <div className="a-link">Home</div>
               </NavLink>
-              <div style={{ marginTop: "-5px" }}>Home </div>
+              
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/talk" active>
+              <NavLink exact className="nav-link" to="/talk" active>
                 <img
                   height="25"
                   width="25"
-                  src="assets/images/talk.png"
+                  src="images/talk.png"
                   alt="Talk to astrologer"
-                />
+                /> 
+                <div className="a-link color-link">Talk to Astrologer</div>
               </NavLink>
-              <div style={{ marginTop: "-5px" }}>Talk to Astrologer</div>
+              
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link px-5" to="/">
+              <NavLink className="nav-link" exact  to="/" activeClassName="main-nav-active">
                 <img
                   height="25"
                   width="25"
-                  src="assets/images/ask.png"
+                  src="images/ask.png"
                   alt="Talk to astrologer"
                 />
+                <div className="a-link">Ask Question</div>
               </NavLink>
-              <div style={{ marginTop: "-5px" }}>Ask Question</div>
+              
             </NavItem>
             <NavItem>
               <NavLink className="nav-link" to="/">
                 <img
                   height="25"
                   width="25"
-                  src="assets/images/reports.png"
+                  src="images/reports.png"
                   alt="Reports"
                 />
+                <div className="a-link">Reports</div>
               </NavLink>
-              <div style={{ marginTop: "-5px" }}>Reports</div>
+              
+
             </NavItem>
           </div>
         </Navbar>

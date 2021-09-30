@@ -159,20 +159,41 @@ footer {
 .quotation-review {
   font-size: 18px;
   margin: 0 auto;
-  padding-left: 5px;
-  padding-right: 15px;
-  quotes: "\201C""\201D""\2018""\2019";
+  padding-left: 15px;
+  padding-right: 10px;
+  margin-top:"50px" ;
   line-height: 1.4;
 }
 
-.quotation-review::before {
-  content: open-quote;
+
+
+.main-nav-active {
+  color:orange;
+}
+
+.big-qoute{
   display: inline;
   height: 0;
   line-height: 0;
-  left: -6px;
-  position: relative;
-  top: 20px;
+  left: 0px;
+  position: relative; 
+  top: 25px;
   color: blue;
   font-size: 4em;
+
+}
+
+.input:active{
+  outline:none
+}
+
+
+.a-link{
+  color:black ;
+  margin-top:3px;
+  margin-bottom:-4px;
+}
+
+.color-link:active{
+  color:orange;
 }

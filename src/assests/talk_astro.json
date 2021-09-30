@@ -1,0 +1,68 @@
+{
+    "httpStatus":"OK",
+    "httpStatusCode":200,
+    "success":true,
+    "message":"Question categories fetched successfully.",
+    "apiName":"Get all categories.",
+    "Astrodata":[
+
+    {
+       "id":0,
+       "name":"Arvind Shukla",
+       "languages":["English","Hindi"],
+       "price":"100",
+       "rating":"4.5",
+       "experience":"25",
+       "imageUrl": "https://tak-astrotak-av-dev.s3.ap-south-1.amazonaws.com/astro-images/agents/1.png",
+       "skills":["Coffe Cup Reading", "Falit Jyotish", "Kundali Grah Dosh", "Vastu", "Astrology", "Face Reading"]
+    },
+
+    {
+        "id":1,
+        "name":"Ashwani mangal",
+        "languages":["English","Bengali"],
+        "price":150,
+        "rating":4.2,
+        "experience":26,
+        "imageUrl": "https://tak-astrotak-av-dev.s3.ap-south-1.amazonaws.com/astro-images/agents/1.png",
+        "skills":["Vastu", "Astrology", "Face Reading"]
+     },
+
+     {
+        "id":2,
+        "name":"Tripathi Daivgya",
+        "languages":["English","Hindi"],
+        "price":300,
+        "rating":4.9,
+        "experience":99.0,
+        "imageUrl": "https://tak-astrotak-av-dev.s3.ap-south-1.amazonaws.com/astro-images/agents/1.png",
+         "skills":[ "Astrology","Vastu"]
+        
+     },
+
+     {
+        "id":3,
+        "name":"Arvind Mishra",
+        "languages":["English","Hindi"],
+        "price":400,
+        "rating":5,
+        "experience":20,
+        "imageUrl": "https://tak-astrotak-av-dev.s3.ap-south-1.amazonaws.com/astro-images/agents/1.png",
+        "skills":["Coffe Cup Reading", "Falit Jyotish", "Kundali Grah Dosh", "Vastu", "Astrology", "Face Reading"]
+        
+     },
+     {
+      "id":4,
+      "name":"Rahul kumar",
+      "languages":["English","Hindi"],
+      "price":400,
+      "rating":4.5,
+      "experience":10,
+      "imageUrl": "https://tak-astrotak-av-dev.s3.ap-south-1.amazonaws.com/astro-images/agents/1.png",
+      "skills":["Kundali Grah Dosh","Coffe Cup Reading", "Falit Jyotish", "Vastu", "Astrology", "Face Reading"]
+      
+   }
+
+]
+
+}

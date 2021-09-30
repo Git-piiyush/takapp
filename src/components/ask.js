@@ -65,24 +65,27 @@ const CardComponent = (props) => {
         <div className="d-inline-flex align-items-baseline">
           <div
             className="col-5 d-flex justify-content-start"
-            style={{ fontSize: "14px" }}
+            style={{ fontSize: "12px" }}
           >
-            <b> &#x20B9; {item.price}999 </b> ( including GST )
+            <b> &#x20B9; {item.price} </b> (including GST)
           </div>
           <div className="col-4" style={{ fontSize: "12px" }}>
             <b>Ideas what to ask</b>
           </div>
           <div className="">
             <Button
-              className="px-2 py-1"
+              className="py-1"
               style={{
                 fontSize: "10px",
                 backgroundColor: "#ff944d",
                 border: "none",
                 borderRadius: "6px",
+                paddingLeft:"4px",
+                paddingRight:"4px",
               }}
             >
-              Ask a question
+              Ask a question 
+              {console.log({item})}
             </Button>
           </div>
         </div>

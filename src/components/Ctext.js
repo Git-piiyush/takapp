@@ -8,7 +8,7 @@ function Ctext(props) {
           <h4>{props.heading}</h4>
         </div>
 
-        <div className="d-flex col-3 justify-content-end">
+       { (props.isValid) && <div className="d-flex col-3 justify-content-end">
           <a
             href="/"
             style={{ textDecoration: "none", color: "orange" }}
@@ -16,19 +16,11 @@ function Ctext(props) {
           >
             <strong>See All &gt;</strong>
           </a>
-        </div>
+        </div> }
 
-        <div className="d-flex col-3 justify-content-end">
-          <a
-            href="/"
-            style={{ textDecoration: "none", color: "orange" }}
-            tag="h2"
-          >
-            <strong>See All &gt;</strong>
-          </a>
-        </div>
+        
       </div>
-      <div className="d-flex flex-row justify-content-start">
+      <div className="d-flex flex-row justify-content-start" style={{textAlign:"left"}}>
         {props.children}
       </div>
     </div>

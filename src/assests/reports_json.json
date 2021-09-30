@@ -1,0 +1,26 @@
+{
+  "data":[
+  {
+  "id":"0",
+  "price":"499",
+  "imageUrl":""
+},
+{
+  "id":"1",
+  "price":"999",
+  "imageUrl":""
+},
+{
+  "id":"2",
+  "price":"199",
+  "imageUrl":""
+},
+{
+  "id":"3",
+  "price":"299",
+  "imageUrl":""
+}
+
+]
+
+}
