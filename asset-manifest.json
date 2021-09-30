@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/takapp/static/css/main.dbc1c756.chunk.css",
+    "main.js": "/takapp/static/js/main.8a7a2d3f.chunk.js",
+    "main.js.map": "/takapp/static/js/main.8a7a2d3f.chunk.js.map",
+    "runtime-main.js": "/takapp/static/js/runtime-main.6d7b01b8.js",
+    "runtime-main.js.map": "/takapp/static/js/runtime-main.6d7b01b8.js.map",
+    "static/css/2.412bd516.chunk.css": "/takapp/static/css/2.412bd516.chunk.css",
+    "static/js/2.5bac435e.chunk.js": "/takapp/static/js/2.5bac435e.chunk.js",
+    "static/js/2.5bac435e.chunk.js.map": "/takapp/static/js/2.5bac435e.chunk.js.map",
+    "static/js/3.7637506c.chunk.js": "/takapp/static/js/3.7637506c.chunk.js",
+    "static/js/3.7637506c.chunk.js.map": "/takapp/static/js/3.7637506c.chunk.js.map",
+    "index.html": "/takapp/index.html",
+    "static/css/2.412bd516.chunk.css.map": "/takapp/static/css/2.412bd516.chunk.css.map",
+    "static/css/main.dbc1c756.chunk.css.map": "/takapp/static/css/main.dbc1c756.chunk.css.map",
+    "static/js/2.5bac435e.chunk.js.LICENSE.txt": "/takapp/static/js/2.5bac435e.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/takapp/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/report.d5e202cb.png": "/takapp/static/media/report.d5e202cb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d7b01b8.js",
+    "static/css/2.412bd516.chunk.css",
+    "static/js/2.5bac435e.chunk.js",
+    "static/css/main.dbc1c756.chunk.css",
+    "static/js/main.8a7a2d3f.chunk.js"
+  ]
+}
